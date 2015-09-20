@@ -1,0 +1,16 @@
+<zk>
+    <div id="bind" apply="org.zkoss.bind.BindComposer"
+         viewModel="@id('vm') @init('org.zkoss.ForEachVM')">
+        <div id="host" style="display:none">
+            <div children="@load(vm.array)">
+                <template name="children">
+                    <div children="@load(vm.array)">
+                        <template name="children">
+                            Test Label
+                        </template>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+</zk>
