@@ -5,7 +5,7 @@
            <forEach items="@load(vm.array)">
            <div>
                <forEach items="@load(vm.array)">
-                   <div>Test Label1</div>
+                   Test Label1
                </forEach>
            </div>
            </forEach>
